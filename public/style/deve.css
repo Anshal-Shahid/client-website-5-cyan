@@ -130,7 +130,7 @@
     .deve-2 h2 {
         /* position: relative; */
         /* top: 20%; */
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .deve-2 h4 {
@@ -160,5 +160,18 @@
 
     .deve-1 {
         display: none;
+    }
+}
+
+@media (max-width:760px) {
+    .youtubes{
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .youtube-5 ,.youtube-6 {
+        display: none;
+    }
+    .deve-2 .youtube{
+        width: 11.5rem;
+        height: 8rem;
     }
 }
