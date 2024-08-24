@@ -1,4 +1,4 @@
-.development{
+.development {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     margin: 0;
@@ -6,7 +6,7 @@
     z-index: 90;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50% );
+    transform: translate(-50%, -50%);
     width: 23rem;
     height: 13rem;
     display: flex;
@@ -17,25 +17,80 @@
     /* padding: 1rem; */
     border: 4px solid var(--secondary-color);
 }
-.development h2{
+
+.development h2 {
     font-family: poppin;
     font-weight: 700;
     font-size: 3rem;
     text-align: center;
 }
-.development .cross{
+
+.development .cross {
     position: absolute;
     top: -3%;
     right: 0%;
     font-size: 2rem;
-    color: brown    ;
+    color: brown;
     transition: all 1s ease;
     padding: .2rem;
     border-bottom-left-radius: 1rem;
     padding-right: .3rem;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
         background-color: #8d8a81;
     }
-    
+
+}
+
+.deve-2 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    display: none;
+}
+
+@media (max-width:1000px) {
+
+    .loader,
+    main {
+        display: none;
+    }
+
+    .development {
+        background-color: var(--primary-color);
+        color: var(--tertiary-color);
+        margin: 0;
+        z-index: 90;
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        overflow: hidden;
+        /* padding: 1rem; */
+        border: 4px solid var(--secondary-color);
+    }
+
+    .deve-2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+            
+        text-align: center;
+    }
+
+    .deve-2 h2 {
+    position: relative;
+    top: 20%;
+    }
+
+    .deve-1 {
+        display: none;
+    }
 }

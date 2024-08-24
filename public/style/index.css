@@ -650,6 +650,21 @@ font-family: aeonb;
         font-size: 20px;
     }
 }
+@media (max-width:460px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media (max-width:360px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media (max-width:300px) {
+    html {
+        font-size: 9px;
+    }
+}
 
 
 /* section-2 */
@@ -1646,3 +1661,12 @@ footer p{
     font-family: aeonr;
     font-size: .85rem;
 }
+
+
+
+
+    @media (max-width:1000px) {
+        .loader{
+            display: none;
+        }
+    }

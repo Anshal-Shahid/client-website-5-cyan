@@ -12,9 +12,14 @@ body.addEventListener('click', () => {
     const loader = document.querySelector('.loader');
     const content = document.querySelector('main');
 
-    loader.style.display = 'none';
-    if (content) {
-      content.style.display = 'block';
+    if (window.matchMedia("(min-width: 1000px)").matches) {
+      // Only execute if the viewport width is above 1000px
+      if (loader) {
+        loader.style.display = 'none';
+      }
+      if (content) {
+        content.style.display = 'block';
+      }
     }
   });
 
