@@ -1,70 +1,139 @@
+// audio 
+const audio = document.getElementById('audio');
+const body = document.querySelector("body")
+body.addEventListener('click', () => {
+  audio.play();
+});
 
+// loader
+
+
+  window.addEventListener("load", function() {
+    const loader = document.querySelector('.loader');
+    const content = document.querySelector('main');
+
+    loader.style.display = 'none';
+    if (content) {
+      content.style.display = 'block';
+    }
+  });
+
+
+
+
+//   body.classList.add('no-scroll');
+  
+  
+//   function enableScrolling() {
+//   body.classList.add('overflow-x');
+//   body.classList.remove('no-scroll');
+// }
+
+ 
+
+
+
+
+
+// ******
 gsap.registerPlugin(ScrollTrigger);
 
 
 
 
-window.onload = function() {
-  window.scrollTo(0, 0);
-};
+// window.onload = function () {
+//   window.scrollTo(0, 0);
+// };
 
-const tl = gsap.timeline({ defaults: { duration: 1 } });
-const tl2 = gsap.timeline({ defaults: { duration: 1 } });
-// welcome
-tl.to(".welcome :nth-child(1)",{
-  delay:1,
-  duration:.7,
-  x:-800,
-  ease: "power1.out",
-}).to(".welcome :nth-child(1)",{
-  display:"none"
-})
-
-
-tl2.to(".welcome :nth-child(2)",{
-  delay:1,
-  duration:.7,
-  x:800,
-  ease: "power1.out",
-}).to(".welcome :nth-child(2)",{
-  display:"none"
-})
+// const tl = gsap.timeline({ defaults: { duration: 1 } });
+// const tl2 = gsap.timeline({ defaults: { duration: 1 } });
+// // welcome
+// tl.to(".welcome :nth-child(1)", {
+//   delay: 1,
+//   duration: .7,
+//   x: -800,
+//   ease: "power1.out",
+// }).to(".welcome :nth-child(1)", {
+//   display: "none"
+// })
 
 
+// tl2.to(".welcome :nth-child(2)", {
+//   delay: 1,
+//   duration: .7,
+//   x: 800,
+//   ease: "power1.out",
+//   onComplete: function() {
+//     enableScrolling();
 
-// 
+//   }
+// }).to(".welcome :nth-child(2)", {
+//   display: "none"
+// }).fromTo(".cyan", {
+//   y: 90,
+//   opacity:0
+// }, {
+//   y: 0,
+//   // delay:1,
+//   duration:.7,
+//   opacity:1,
+//   ease: "bounce",
+
+// }).fromTo(".foster", {
+//   y: 90,
+//   opacity:0
+// }, {
+//   y: 0,
+//   // delay:.1,
+//   duration:.7,
+
+//   opacity:1,
+//   ease: "bounce",
+
+// })
+
+
+
+
+
+// hero
+// const tl3 = gsap.timeline({ defaults: { duration: 1 } });
+
+// tl.fromTo(".hero .h1 :nth-child(1)",{
+//   y:-30,
+// },{
+//   y:0,
+// })
+
+
 
 
 
 // time
 
 
-function updateTime() {
-  const now = new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' });
-  const houstonTime = new Date(now);
-  let hours = houstonTime.getHours();
-  const minutes = houstonTime.getMinutes().toString().padStart(2, '0');
-  const ampm = hours >= 12 ? 'PM' : 'AM';
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  const formattedHours = hours.toString().padStart(2, '0');
-  document.getElementById('time').textContent = `${formattedHours}:${minutes} ${ampm} - Houston, TX`;
-}
+// function updateTime() {
+//   const now = new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' });
+//   const houstonTime = new Date(now);
+//   let hours = houstonTime.getHours();
+//   const minutes = houstonTime.getMinutes().toString().padStart(2, '0');
+//   const ampm = hours >= 12 ? 'PM' : 'AM';
+//   hours = hours % 12;
+//   hours = hours ? hours : 12; // the hour '0' should be '12'
+//   const formattedHours = hours.toString().padStart(2, '0');
+//   document.getElementById('time').textContent = `${formattedHours}:${minutes} ${ampm} - Houston, TX`;
+// }
 
-// Update time immediately
-updateTime();
-// Update time every minute
-setInterval(updateTime, 60000);
+// // Update time immediately
+// updateTime();
+// // Update time every minute
+// setInterval(updateTime, 60000);
 
 
 // audio
 
 
-const audio = document.getElementById('audio');
-const body= document.querySelector("body")
-body.addEventListener('click', () => {
-    audio.play();
-});
+
 
 
 
@@ -75,25 +144,65 @@ body.addEventListener('click', () => {
 // 
 
 
-gsap.fromTo(".section-2", {
-  backgroundColor: "#2b2b2b",
-  color:"#FCFAF3",
- 
-  ease: "power4.in",
- 
-}, {
+// gsap.fromTo(".section-2", {
+//   backgroundColor: "#F4EBD0",
+//   color: "#D6AD60",
 
-  backgroundColor: "#FCFAF3",
-  color:"#2b2b2b",
-  duration: .5,
-  scrollTrigger:{
-    trigger: ".hero",
-    start: "80% 55%",
-    // markers:true
+//   ease: "power4.in",
 
-  }
-})
+// }, {
 
+//   backgroundColor: "#D6AD60",
+//   color: "#F4EBD0",
+//   duration: .5,
+//   scrollTrigger: {
+//     trigger: ".hero",
+//     start: "80% 55%",
+//     // markers:true
+
+//   }
+// })
+// gsap.fromTo(".section-3", {
+//   backgroundColor: "#D6AD60",
+//   color: "#F4EBD0",
+
+//   ease: "power4.in",
+
+// }, {
+
+//   backgroundColor: "#F4EBD0",
+//   color: " #D6AD60",
+//   duration: .5,
+//   scrollTrigger: {
+//     trigger: ".section-3",
+//     start: "top 55%",
+//     // markers: true
+
+//   }
+// })
+
+// gsap.fromTo(".section-4", {
+//   backgroundColor: "#F4EBD0",
+//   color: "#D6AD60",
+
+//   ease: "power4.in",
+
+// },{
+
+//   backgroundColor: "#D6AD60",
+//   color: "#F4EBD0",
+//   duration: .5,
+//   scrollTrigger: {
+//     trigger: ".section-4",
+//     start: "top 55%",
+//     // markers:true
+
+//   }
+// })
+
+
+
+// *********
 
 const data = document.querySelectorAll(".data1");
 
@@ -146,70 +255,12 @@ gsap.to(".hero", {
     pin: true,
     pinSpacing: false,
     // markers:true
+    scrub:true
 
   },
 });
 
 
-gsap.fromTo(".video-1", {
-  x: -100,
-  opacity: 0
-
-}, {
-  x: 0,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".video-1",
-    // markers:true,
-    start: "-5% 75%",
-
-  }
-})
-
-gsap.fromTo(".video-2", {
-  x: 100,
-  opacity: 0
-
-}, {
-  x: 0,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".video-2",
-    // markers:true,
-    start: "-5% 75%",
-
-  }
-})
-
-gsap.fromTo(".video-3", {
-  x: -100,
-  opacity: 0
-
-}, {
-  x: 0,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".video-2",
-    // markers:true,
-    start: "75% 70%",
-
-  }
-})
-
-gsap.fromTo(".video-4", {
-  x: 100,
-  opacity: 0
-
-}, {
-  x: 0,
-  opacity: 1,
-  scrollTrigger: {
-    trigger: ".video-2",
-    // markers:true,
-    start: "75% 70%",
-
-  }
-})
 
 
 // section 4 animation
