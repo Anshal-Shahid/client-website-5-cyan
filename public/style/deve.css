@@ -53,7 +53,7 @@
 @media (max-width:1100px) {
 
     .loader,
-    main {
+    main ,nav{
         display: none;
     }
 
