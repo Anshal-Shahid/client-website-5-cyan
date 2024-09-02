@@ -219,7 +219,7 @@ gsap.from(data, {
   stagger: 1,
   scrollTrigger: {
     trigger: ".data1 ",
-    start: "-10% 90%",
+    start: "top 90%",
     end: "bottom top",
     // markers:true
 
