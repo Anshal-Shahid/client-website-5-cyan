@@ -46,11 +46,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".nav",{
   backgroundColor:"#e8edec",
+  
   scrollTrigger:{
       trigger:".nav",
       start:"bottom top",
       end: " bottom bottom ",
-      markers:true,
+      // markers:true,
       scrub:true
 
   }
@@ -61,7 +62,7 @@ gsap.to(".nav ul li a",{
       trigger:".nav",
       start:"bottom top",
       end: " bottom bottom ",
-      markers:true,
+      // markers:true,
       scrub:true
   }
 })
@@ -71,7 +72,7 @@ gsap.to(".nav h3",{
       trigger:".nav",
       start:"bottom top",
       end: " bottom bottom ",
-      markers:true,
+      // markers:true,
       scrub:true
 
   }
