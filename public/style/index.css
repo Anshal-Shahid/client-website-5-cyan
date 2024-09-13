@@ -1453,11 +1453,21 @@ nav ul li:hover a {
     backdrop-filter: blur(1px);
 }
 
+.section-6 >h1{
+    text-align: center;
+    font-size: 3.9rem;
+    font-family: reco;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
 .arr{
     position: absolute;
     /* width: 5rem; */
     /* height: 7rem; */
-    top: 0px;
+    top: 4rem;
     left: 1rem;
     /* background-color: var(--secondary-color); */
 }
@@ -1837,7 +1847,8 @@ textarea,
 input {
     width: 100%;
     border: 1px solid var(--primary-color);
-    background-color: var(--tertiary-color);
+    /* background-color: var(--tertiary-color); */
+    background-color: rgba(169, 168, 168, 0.915);
     border-radius: .15rem;
     padding: .1rem .2rem;
     font-size: .9rem;
