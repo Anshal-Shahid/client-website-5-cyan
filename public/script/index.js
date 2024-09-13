@@ -308,7 +308,7 @@ gsap.from(data2, {
 //     // markers:true,
 //     scrub:true
 
-//   },
+//   }
 
 // })
 
