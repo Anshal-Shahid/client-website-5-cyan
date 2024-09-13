@@ -396,7 +396,7 @@ main {
 
 
 .hero {
-    height: 98vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -417,7 +417,7 @@ main {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 30%;
+    opacity: 40%;
     /* display: none; */
 }
 
@@ -607,6 +607,7 @@ nav ul li:hover a {
 .content h1{
     font-size: 7rem;
     text-transform: uppercase;
+    font-weight: bolder;
     
 }
 .content :nth-child(2){
