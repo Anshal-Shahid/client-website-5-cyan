@@ -468,8 +468,8 @@ nav {
     align-items: center;
     /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); */
     background-color: var(--secondary-color);
-    background-color: #51525167;
-    background-color: var(--secondary-color);
+    background-color: transparent;
+    background-color: #51525116;
 
     width: 100%;
     font-family: poppin;
@@ -492,7 +492,7 @@ nav .text {
 
 nav h3 {
     font-size: 1rem;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
 }
 
 nav .button {
@@ -537,19 +537,19 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     font-family: oswald;
 }
 
 nav ul li:hover {
     /* background-color: var(--brown-color); */
     text-decoration: underline;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     border-radius: 1rem;
 }
 
 nav ul li:hover a {
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
 
 }
 

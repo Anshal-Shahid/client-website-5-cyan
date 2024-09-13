@@ -32,7 +32,7 @@ body.addEventListener('click', () => {
 //   function enableScrolling() {
 //   body.classList.add('overflow-x');
 //   body.classList.remove('no-scroll');
-// }
+// }ro
 
  
 
@@ -44,7 +44,38 @@ body.addEventListener('click', () => {
 gsap.registerPlugin(ScrollTrigger);
 
 
+gsap.to(".nav",{
+  backgroundColor:"#e8edec",
+  scrollTrigger:{
+      trigger:".nav",
+      start:"bottom top",
+      end: " bottom bottom ",
+      markers:true,
+      scrub:true
 
+  }
+})
+gsap.to(".nav ul li a",{
+  color:"#163809",
+  scrollTrigger:{
+      trigger:".nav",
+      start:"bottom top",
+      end: " bottom bottom ",
+      markers:true,
+      scrub:true
+  }
+})
+gsap.to(".nav h3",{
+  color:"#163809",
+  scrollTrigger:{
+      trigger:".nav",
+      start:"bottom top",
+      end: " bottom bottom ",
+      markers:true,
+      scrub:true
+
+  }
+})
 
 // window.onload = function () {
 //   window.scrollTo(0, 0);
