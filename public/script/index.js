@@ -251,21 +251,34 @@ gsap.from(data2, {
 
 
 
-// 
-gsap.to(".hero", {
-  scrollTrigger: {
-    trigger: ".hero ",
-    start: "top top",
-    end: "bottom top",
-    pin: true,
-    pinSpacing: false,
-    // markers:true
+// scroll animation 
+
+// gsap.to(".hero", {
+//   scrollTrigger: {
+//     trigger: ".hero ",
+//     start: "top top",
+//     end: "bottom top",
+//     pin: true,
+//     pinSpacing: false,
+//     // markers:true
+//     scrub:true
+
+//   },
+// });
+
+gsap.to(".hero",{
+  scale:0,
+  // duration:1.5,
+  scrollTrigger:{
+    trigger:".hero",
+    start:"top top",
+    end:"bottom top",
+    // markers:true,
     scrub:true
 
   },
-});
 
-
+})
 
 
 // section 4 animation

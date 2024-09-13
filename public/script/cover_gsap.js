@@ -2,90 +2,75 @@ gsap.registerPlugin(ScrollTrigger);
 const tl_1 = gsap.timeline({ defaults: { duration: 1 } });
 
 
-const video_1=document.querySelector(".video-1 .cover-container")
-const video_2=document.querySelector(".video-2 .cover-container")
-const video_3=document.querySelector(".video-3 .cover-container")
-const video_4=document.querySelector(".video-4 .cover-container")
+// const video_1=document.querySelector(".video-1 ")
+// const video_2=document.querySelector(".video-2 ")
+// const video_3=document.querySelector(".video-3 ")
+// const video_4=document.querySelector(".video-4 ")
 
 
 
-// videos
+// // videos
 
-video_1.addEventListener("mouseover",()=>{
+// video_1.addEventListener("mouseover",()=>{
 
-    tl_1.to(".cover-1",{
-        duration:.3,
-        y:460
-    })
+//     tl_1.to(".cover-1",{
+//         duration:.3,
+//         y:460
+//     })
 
-})    
+// })    
 
-video_1.addEventListener("mouseleave",()=>{
-   tl_1.to(".cover-1",{
-        duration:.3,
-        y:0
-    })
+// video_1.addEventListener("mouseleave",()=>{
+//    tl_1.to(".cover-1",{
+//         duration:.3,
+//         y:0
+//     })
 
-})  
+// })  
 
-// video-2  
+// // video-2  
 
-video_2.addEventListener("mouseover",()=>{
+// video_2.addEventListener("mouseover",()=>{
 
-    tl_1.to(".cover-2",{
-        duration:.3,
-        y:460
-    })
+//     tl_1.to(".cover-2",{
+//         duration:.3,
+//         y:460
+//     })
 
-})    
+// })    
 
-video_2.addEventListener("mouseleave",()=>{
-   tl_1.to(".cover-2",{
-        duration:.3,
-        y:0
-    })
+// video_2.addEventListener("mouseleave",()=>{
+//    tl_1.to(".cover-2",{
+//         duration:.3,
+//         y:0
+//     })
 
-})    
+// })    
 
 
-// video-3
+// // video-3
 
-video_3.addEventListener("mouseover",()=>{
+// video_3.addEventListener("mouseover",()=>{
 
-    tl_1.to(".cover-3",{
-        duration:.3,
-        y:460
-    })
+//     tl_1.to(".cover-3",{
+//         duration:.3,
+//         y:460
+//     })
 
-})    
+// })    
 
-video_3.addEventListener("mouseleave",()=>{
-   tl_1.to(".cover-3",{
-        duration:.3,
-        y:0
-    })
+// video_3.addEventListener("mouseleave",()=>{
+//    tl_1.to(".cover-3",{
+//         duration:.3,
+//         y:0
+//     })
 
-})    
+// })    
 
 
 // video-4
 
-video_4.addEventListener("mouseover",()=>{
 
-    tl_1.to(".cover-4",{
-        duration:.3,
-        y:460
-    })
-
-})    
-
-video_4.addEventListener("mouseleave",()=>{
-   tl_1.to(".cover-4",{
-        duration:.3,
-        y:0
-    })
-
-})    
 
 
 
